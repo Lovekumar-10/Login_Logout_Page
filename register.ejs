@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: #000;
+            height: 100vh;
+        } 
+    </style>
+</head>
+<body class="bg-black, text-light">
+    <div class="container  my-4 p-3" style="width: 400px; border-radius:10px; border: 2px solid; ">
+        <h1 class="text-center">User Register</h1>
+        <form action="/register" method="post" enctype="multipart/form-data">
+            <div class="mb-2">
+                <label for="first" class="form-label">Name</label>
+                <input type="text" name="name" id="first" class="form-control bg-black text-light">
+
+            </div>
+            <div class="mb-2">
+                <label for="two" class="form-label">Email</label>
+                <input type="email" name="email" id="two" class="form-control bg-black text-light">
+
+            </div>
+            <div class="mb-2">
+                <label for="three" class="form-label">Password</label>
+                <input type="password" name="password" id="three" class="form-control bg-black text-light">
+
+            </div>
+            <div class="mb-2">
+                <label for="four" class="form-label">Profile Picture</label>
+                <input type="file" name="register" id="four" class="form-control bg-black text-light">
+
+            </div>
+
+            <div class="d-grid col-6 mx-auto mt-5">
+                <button class="btn btn-primary">Register</button>
+            </div>
+
+            <div class="d-flex justify-content-end my-3">
+                Alredy have account <a href="" class="mx-2 text-warning">Login</a>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
